@@ -16,14 +16,26 @@ let contFicha11 = document.querySelector("#contFicha11");
 let contFicha12 = document.querySelector("#contFicha12");
 
 
+
+
 contFicha1.addEventListener("click" , () =>{
    
    let selectores1 = document.querySelector("#selectores1");
    let btn_guardarVino1 = document.querySelector("#btn_guardarVino1");
+   const text = document.querySelector("#textComprar");
+  
    
+
+   
+
    contDescription1.classList.toggle("contFichaJS");
    selectores1.classList.toggle("contFichaJS");
    btn_guardarVino1.classList.toggle("contFichaJS");
+   
+   
+   
+   
+   
 });
 
 

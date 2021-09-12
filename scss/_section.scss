@@ -676,14 +676,14 @@
     
     
             .containerSectionCuadroBase{
-                width: 90%;
+                width: 95%;
                 margin: 5px 0px;
                 //padding: 5px 0px;
                 background-image: url(../source/VINO1.jpg);
                 background-size: 100% 100%;
                 border-radius: 8px;
                 border: 2px solid $colorBlanco;
-                box-shadow: 0px 3px 5px $colorBlck;
+                box-shadow: 0px 3px 5px $colorBlck; 
                 overflow: hidden;
                 .containerSectionCuadro{
                     width: 100%;
