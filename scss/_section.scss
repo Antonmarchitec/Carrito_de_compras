@@ -381,7 +381,8 @@
     
                     /*****DSECRIPCION**************************************/
                     .contDescription{
-                        width: 100%;
+                        width: 250px;
+                        margin: auto;
                         padding: 3px 0px;
                         opacity: 1;
                         transition: 0.5s all;
@@ -497,7 +498,7 @@
                 .containerSectionCuadro:hover{
                     /******************/
                     .contDescription{
-                        width: 100%;
+                        width: 250px;
                         padding: 3px 0px;
                         opacity:1;
                         //background: yellowgreen;
@@ -675,7 +676,7 @@
     
     
             .containerSectionCuadroBase{
-                width: 85%;
+                width: 90%;
                 margin: 5px 0px;
                 //padding: 5px 0px;
                 background-image: url(../source/VINO1.jpg);
@@ -711,12 +712,12 @@
     
                     /*****DSECRIPCION**************************************/
                     .contDescription{
-                        width: 75%;
+                        width: 250px;
                         margin: auto;
                         padding: 3px 0px;
                         opacity: 1;
                         transition: 0.5s all;
-                        //background: yellowgreen;
+                        //background: rgb(50, 205, 102);
                         .contDescriptionTexto{
                             text-align: center;
                             color: $colorBlanco;
@@ -828,7 +829,7 @@
                 .containerSectionCuadro:hover{
                     /******************/
                     .contDescription{
-                        width: 100%;
+                        width: 250px;
                         padding: 3px 0px;
                         opacity:1;
                         //background: yellowgreen;
