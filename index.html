@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hamburguers.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,8 +23,13 @@
                     <h2 class="iconLogo">Carrito<br>de compras</h2>
                 </div>
 
-                <div class="btnResponsive">
-                    <i class="iconResponsive fas fa-bars" id="iconResponsive"><span class="btnRText"> Opciones</span></i>
+                <div class="btnResponsive" id="btnResponsive">
+                    <button class="hamburger hamburger--minus" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>   
+                    <!--<i class="iconResponsive fas fa-bars" id="iconResponsive"><span class="btnRText"> Categorias </span></i>-->
                 </div>
 
                 <div class="containerHeaderTopC2" id="containerHeaderTopC2">
@@ -36,10 +42,36 @@
                     </nav>
                 </div> 
             </div>   
+        </div>   
+
+
+
+
+        <!--POSITION ELEMENTS SLADER---------------------------------------->
+        <!--POSITION ELEMENTS SLADER---------------------------------------->
+        <!--POSITION ELEMENTS SLADER---------------------------------------->
+        <!--POSITION ELEMENTS SLADER---------------------------------------->
+        <div class="SLADER">
+            <div class="contSlader">
+                <div class="contSladerBase" id="contSladerBase">
+                    <div class="contSlader_cuadroImg1" id="figura">
+
+                    </div>
+                    <div class="contSlader_cuadroImg2" id="figura">
+                        
+                    </div>
+                    <div class="contSlader_cuadroImg3" id="figura">
+                        
+                    </div>
+                </div>
+                <div class="next" id="next">
+                    <i class="iconNextPrew fas fa-arrow-circle-right"></i>
+                </div>
+                <div class="prew" id="prew">
+                    <i class="iconNextPrew fas fa-arrow-circle-left"></i>
+                </div>
+            </div>
         </div>
-
-
-
 
 
 
@@ -562,11 +594,6 @@
 
 
 
-
-
-
-
-
         <!--POSITION ELEMENTS FOOTER---------------------------------------->
         <!--POSITION ELEMENTS FOOTER---------------------------------------->
         <!--POSITION ELEMENTS FOOTER---------------------------------------->
@@ -636,54 +663,8 @@
                     <p class="number">5</p>
                 </div>
                 
-                <!--Accion-->
-                <div class="contCampo3">
-                    <h3 class="title">Acción</h3>
-                    <div class="contBtns">
-                        <div class="size-btn">
-                            <a href=""><img src="source/sustraccion.png" width="100%" height="100%" class="icon"></a>
-                        </div>
-                        <div class="size-btn">
-                            <a href=""><img src="source/adicion.png" width="100%" height="100%" class="icon"></a>
-                        </div>
-                    </div>
+              
 
-                    <div class="contBtns">
-                        <div class="size-btn">
-                            <a href=""><img src="source/sustraccion.png" width="100%" height="100%" class="icon"></a>
-                        </div>
-                        <div class="size-btn">
-                            <a href=""><img src="source/adicion.png" width="100%" height="100%" class="icon"></a>
-                        </div>
-                    </div>
-
-                    <div class="contBtns">
-                        <div class="size-btn">
-                            <a href=""><img src="source/sustraccion.png" width="100%" height="100%" class="icon"></a>
-                        </div>
-                        <div class="size-btn">
-                            <a href=""><img src="source/adicion.png" width="100%" height="100%" class="icon"></a>
-                        </div>
-                    </div>
-
-                    <div class="contBtns">
-                        <div class="size-btn">
-                            <a href=""><img src="source/sustraccion.png" width="100%" height="100%" class="icon"></a>
-                        </div>
-                        <div class="size-btn">
-                            <a href=""><img src="source/adicion.png" width="100%" height="100%" class="icon"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Precio-->
-                <div class="contCampo4">
-                    <h3 class="title">Precio</h3>
-                    <p class="number">10</p>
-                    <p class="number">20</p>
-                    <p class="number">30</p>
-                    <p class="number">40</p>
-                </div>
 
                 <!--Totales-->
                 <div class="contCampo5">
@@ -721,9 +702,6 @@
                 <div class="totalCantidad">
                     500
                 </div>
-                <div class="totalPrecio">
-                    1000
-                </div>
                 <div class="totalTotales">
                     2000
                 </div>
@@ -732,10 +710,14 @@
             
             
             <div class="contBotones">
-                <a href=""><button class="btn" id="btn"> Vaciar carrito</button></a>
-                <a href=""><button class="btn" id="btn"> Enviar </button></a>
+                <a href=""><button class="btns" id="btn"> Vaciar carrito</button></a>
+                <a href=""><button class="btns" id="btn"> Enviar </button></a>
             </div>
            
+        </div>
+
+        <div class="btnTop" id="btnTop">
+            <i class="iconTop fas fa-angle-double-up"></i> 
         </div>
     </div>
     
@@ -743,5 +725,8 @@
     <script src="js/selectores.js"></script>
     <script src="js/carrito.js"></script>
     <script src="js/fichas.js"></script>
+    <script src="js/slader.js"></script>
+    <script src="js/hamburguers.js"></script>
+    <script src="js/btnResponsive.js"></script>
 </body>
 </html>

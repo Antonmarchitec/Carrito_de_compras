@@ -27,11 +27,12 @@
 
 
 .contBasePedido{
-    width: 420px;
+    width: 280px;
     padding:5px 0px;
-    background: rgba(82, 12, 12, 0.877);
-    border-radius: 10px 0px 0px 0px;
-    color: white;
+    background: rgba(255, 255, 255, 0.938);
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 5px black;
+    color: $colorBlck;
     position: fixed;
     top: 130px;
     right:-100%;
@@ -48,12 +49,12 @@
         align-items: center;
         /*CAMPO NOMBRE*/
         .contCampo1{
-            width:100px;
+            width:90px;
             padding: 5px;
-            
+            //background: limegreen;
             .title{
                 text-align: center;
-                color: white;
+                color: $colorVino;
                 font-size: 14px;
             }
             .text{
@@ -69,10 +70,10 @@
         .contCampo2{
             width:60px;
             padding: 5px;
-            
+            //background: lightseagreen;
             .title{
                 text-align: center;
-                color: white;
+                color:  $colorVino;
                 font-size: 14px;
             }
             .number{
@@ -81,53 +82,15 @@
             }
         }
 
-        /*CAMPO ACCION*/
-        .contCampo3{
-            width:60px;
-            padding: 5px;
-            background: transparent;
-            .title{
-                text-align: center;
-                color: white;
-                font-size: 14px;
-            }
-            .contBtns{
-                width: 50px;
-                height: 16px;
-                //background: chocolate;
-                display: flex;
-                justify-content: space-around;
-                .size-btn{
-                    //background: rgb(80, 255, 124);
-                    
-                }
-            }
-        }
-        
-        /*CAMPO PRECIO*/
-        .contCampo4{    
-            width:60px;
-            padding: 5px;
-            background: transparent;
-            .title{
-                text-align: center;
-                color: white;
-                font-size: 14px;
-            }
-            .number{
-                font-size: 12px;
-                text-align: center;
-            }
-        }
-        
+    
         /*CAMPO TOTAL*/
         .contCampo5{
-            width:60px;
+            width:50px;
             padding: 5px;
-            background: transparent;
+            //background: lightslategray;
             .title{
                 text-align: center;
-                color: white;
+                color:  $colorVino;
                 font-size: 14px;   
             }
             .number{
@@ -138,12 +101,12 @@
         
         /*CAMPO QUITAR*/
         .contBtnQuitar{
-            width:60px;
+            width:50px;
             padding: 5px;
             //background: green;
             .title{
                 text-align: center;
-                color: white;
+                color:  $colorVino;
                 font-size: 14px;   
             }
             .btnQuitar{
@@ -177,27 +140,22 @@
             margin-left: 55px;
             font-size: 14px;
         }
-        .totalPrecio{
-            //background: cornflowerblue;
-            float: right;
-            margin-right: 83px;
-            font-size: 14px;
-        }
+        
         .totalTotales{
             //background: crimson;
             float: right;
-            margin-right: 20px;
+            margin-right: 70px;
             font-size: 14px;
         }
     }
     .contBotones{
         width: 100%;
         padding: 5px 0px;
-        //background: yellow;
+        //background: rgb(11, 63, 15);
         display: flex;
         justify-content: space-around;
-        .btn{
-            width: 150px;
+        .btns{
+            width: 90px;
             padding: 3px 5px;
             background: $colorBlck;
             color: white;
@@ -205,8 +163,10 @@
             border:1px solid $colorBlanco;
             cursor: pointer;
         }
-        .btn:hover{
-            box-shadow: 0px 1px 0px white;
+        .btns:hover{
+            background:rgba(0, 0, 0, 0.795);
+            box-shadow: 0px 2px 0px grey;
+            color: $colorBlanco;
         }
     }
 }
@@ -214,4 +174,36 @@
     right: 0px;
     opacity: 1;
 }
+
+
+.btnTop{
+    width: 40px;
+    height: 40px;
+    background: $colorVino;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    .iconTop{
+        font-size: 30px;
+        color: white;
+    }
+    .iconTopJS{
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 

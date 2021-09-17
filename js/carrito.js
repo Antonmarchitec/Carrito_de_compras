@@ -1,8 +1,6 @@
 
 let btnCarrito = document.querySelector("#imgCarrito");
 let contBasePedido = document.querySelector("#contBasePedido");
-let iconResponsive = document.querySelector("#iconResponsive");
-let containerHeaderTopC2 = document.querySelector("#containerHeaderTopC2");
 
 
 btnCarrito.addEventListener("click" , () =>{
@@ -10,9 +8,7 @@ btnCarrito.addEventListener("click" , () =>{
     contBasePedido.classList.toggle("contBasePedidoJS");
 });
 
-iconResponsive.addEventListener("click" , () =>{
-    containerHeaderTopC2.classList.toggle("containerHeaderTopC2JS");
-})
+
 
 
 
@@ -29,9 +25,10 @@ const img3 = document.querySelector("#img3");
 img3.classList.add("img3JS");
 const img4 = document.querySelector("#img4");
 img4.classList.add("img4JS");
+const img5 = document.querySelector("#img5");
+img5.classList.add("img5JS");
 /*
-const img4 = document.querySelector("#img4");
-img4.classList.add("img4JS");
+
 const img4 = document.querySelector("#img4");
 img4.classList.add("img4JS");
 const img4 = document.querySelector("#img4");

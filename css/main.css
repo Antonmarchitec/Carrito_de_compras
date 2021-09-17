@@ -12,28 +12,26 @@ html {
 
 .CONTAINER {
   width: 100%;
-  max-width: 1200px;
-  padding: 5px 0px;
-  background: #ff7e7e;
+  max-width: 1210px;
   margin: auto;
   display: grid;
-  gap: 1em;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "HEADER         HEADER         HEADER" "SECTION        SECTION        SECTION" "FOOTER         FOOTER         FOOTER";
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "HEADER         HEADER         HEADER" "SLADER         SLADER         SLADER" "SECTION        SECTION        SECTION" "FOOTER         FOOTER         FOOTER";
 }
 .CONTAINER .HEADER {
-  padding: 5px 0px;
   background: #012f41;
   grid-area: HEADER;
 }
+.CONTAINER .SLADER {
+  background: #012f41;
+  grid-area: SLADER;
+}
 .CONTAINER .SECTION {
-  padding: 5px 0px;
   background: #012f41;
   grid-area: SECTION;
 }
 .CONTAINER .FOOTER {
-  padding: 5px 0px;
   background: #012f41;
   grid-area: FOOTER;
 }
@@ -41,7 +39,7 @@ html {
 .containerHeader {
   width: 100%;
   padding: 10px 0px;
-  background: rgba(32, 32, 32, 0.966);
+  background: #202020;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -63,9 +61,9 @@ html {
   font-size: 30px;
   color: white;
 }
-.containerHeader .btnResponsive .iconResponsive {
-  font-size: 35px;
-  color: white;
+.containerHeader .btnResponsive {
+  width: 50px;
+  height: 50px;
   display: none;
 }
 .containerHeader .containerHeaderTopC2 {
@@ -128,24 +126,13 @@ html {
   }
   .containerHeader .btnResponsive {
     margin-right: 20px;
-  }
-  .containerHeader .btnResponsive .iconResponsive {
-    font-size: 22px;
-    color: white;
     display: block;
-    cursor: pointer;
-  }
-  .containerHeader .btnResponsive .iconResponsive .btnRText {
-    font-size: 20px;
-    color: #e7e7e7;
-    cursor: pointer;
   }
   .containerHeader .containerHeaderTopC2 {
     width: 150px;
     padding: 0px;
-    background: yellow;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: -100%;
     opacity: 0;
     transition: 0.2s all;
@@ -153,7 +140,6 @@ html {
   .containerHeader .containerHeaderTopC2 .nav {
     width: 100%;
     padding: 0px 0px;
-    background: olive;
     display: flex;
     align-items: center;
   }
@@ -173,7 +159,7 @@ html {
     width: 100%;
     height: 50px;
     padding: 1px 10px;
-    background: #4d0020;
+    background: #1b1b1b;
     text-align: center;
     display: flex;
     align-items: center;
@@ -442,35 +428,35 @@ html {
   background-size: 100% 100%;
 }
 .contGeneralSection .containerSection .img4JS {
-  background: url(../source/VINO4.jpg);
+  background: url(../source/vv1.jpg);
   background-size: 100% 100%;
 }
 .contGeneralSection .containerSection .img5JS {
-  background: url(../source/VINO4.jpg);
+  background: url(../source/vv2.jfif);
   background-size: 100% 100%;
 }
 .contGeneralSection .containerSection .img6JS {
-  background: url(../source/VINO4.jpg);
+  background: url(../source/vv3.jpg);
   background-size: 100% 100%;
 }
 .contGeneralSection .containerSection .img7JS {
-  background: url(../source/VINO4.jpg);
+  background: url(../source/vv4.jpg);
   background-size: 100% 100%;
 }
 .contGeneralSection .containerSection .img8JS {
-  background: url(../source/VINO4.jpg);
+  background: url(../source/vv5.jpg);
   background-size: 100% 100%;
 }
 .contGeneralSection .containerSection .img9JS {
-  background: url(../source/VINO4.jpg);
+  background: url(../source/vv6.jfif);
   background-size: 100% 100%;
 }
 .contGeneralSection .containerSection .img10JS {
-  background: url(../source/VINO4.jpg);
+  background: url(../source/vv5.jpg);
   background-size: 100% 100%;
 }
 .contGeneralSection .containerSection .img11JS {
-  background: url(../source/VINO4.jpg);
+  background: url(../source/vv3.jpg);
   background-size: 100% 100%;
 }
 .contGeneralSection .containerSection .img12JS {
@@ -1130,11 +1116,12 @@ html {
 }
 
 .contBasePedido {
-  width: 420px;
+  width: 280px;
   padding: 5px 0px;
-  background: rgba(82, 12, 12, 0.877);
-  border-radius: 10px 0px 0px 0px;
-  color: white;
+  background: rgba(255, 255, 255, 0.938);
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 0px 0px 5px black;
+  color: #1b1b1b;
   position: fixed;
   top: 130px;
   right: -100%;
@@ -1151,18 +1138,16 @@ html {
   align-items: center;
   /*CAMPO NOMBRE*/
   /*CAMPO CANTIDAD*/
-  /*CAMPO ACCION*/
-  /*CAMPO PRECIO*/
   /*CAMPO TOTAL*/
   /*CAMPO QUITAR*/
 }
 .contBasePedido .contenedorPedidos .contCampo1 {
-  width: 100px;
+  width: 90px;
   padding: 5px;
 }
 .contBasePedido .contenedorPedidos .contCampo1 .title {
   text-align: center;
-  color: white;
+  color: #4d0020;
   font-size: 14px;
 }
 .contBasePedido .contenedorPedidos .contCampo1 .text {
@@ -1178,51 +1163,20 @@ html {
 }
 .contBasePedido .contenedorPedidos .contCampo2 .title {
   text-align: center;
-  color: white;
+  color: #4d0020;
   font-size: 14px;
 }
 .contBasePedido .contenedorPedidos .contCampo2 .number {
   font-size: 12px;
   text-align: center;
 }
-.contBasePedido .contenedorPedidos .contCampo3 {
-  width: 60px;
-  padding: 5px;
-  background: transparent;
-}
-.contBasePedido .contenedorPedidos .contCampo3 .title {
-  text-align: center;
-  color: white;
-  font-size: 14px;
-}
-.contBasePedido .contenedorPedidos .contCampo3 .contBtns {
-  width: 50px;
-  height: 16px;
-  display: flex;
-  justify-content: space-around;
-}
-.contBasePedido .contenedorPedidos .contCampo4 {
-  width: 60px;
-  padding: 5px;
-  background: transparent;
-}
-.contBasePedido .contenedorPedidos .contCampo4 .title {
-  text-align: center;
-  color: white;
-  font-size: 14px;
-}
-.contBasePedido .contenedorPedidos .contCampo4 .number {
-  font-size: 12px;
-  text-align: center;
-}
 .contBasePedido .contenedorPedidos .contCampo5 {
-  width: 60px;
+  width: 50px;
   padding: 5px;
-  background: transparent;
 }
 .contBasePedido .contenedorPedidos .contCampo5 .title {
   text-align: center;
-  color: white;
+  color: #4d0020;
   font-size: 14px;
 }
 .contBasePedido .contenedorPedidos .contCampo5 .number {
@@ -1230,12 +1184,12 @@ html {
   text-align: center;
 }
 .contBasePedido .contenedorPedidos .contBtnQuitar {
-  width: 60px;
+  width: 50px;
   padding: 5px;
 }
 .contBasePedido .contenedorPedidos .contBtnQuitar .title {
   text-align: center;
-  color: white;
+  color: #4d0020;
   font-size: 14px;
 }
 .contBasePedido .contenedorPedidos .contBtnQuitar .btnQuitar {
@@ -1262,14 +1216,9 @@ html {
   margin-left: 55px;
   font-size: 14px;
 }
-.contBasePedido .totales .totalPrecio {
-  float: right;
-  margin-right: 83px;
-  font-size: 14px;
-}
 .contBasePedido .totales .totalTotales {
   float: right;
-  margin-right: 20px;
+  margin-right: 70px;
   font-size: 14px;
 }
 .contBasePedido .contBotones {
@@ -1278,8 +1227,8 @@ html {
   display: flex;
   justify-content: space-around;
 }
-.contBasePedido .contBotones .btn {
-  width: 150px;
+.contBasePedido .contBotones .btns {
+  width: 90px;
   padding: 3px 5px;
   background: #1b1b1b;
   color: white;
@@ -1287,13 +1236,78 @@ html {
   border: 1px solid #e7e7e7;
   cursor: pointer;
 }
-.contBasePedido .contBotones .btn:hover {
-  box-shadow: 0px 1px 0px white;
+.contBasePedido .contBotones .btns:hover {
+  background: rgba(0, 0, 0, 0.795);
+  box-shadow: 0px 2px 0px grey;
+  color: #e7e7e7;
 }
 
 .contBasePedidoJS {
   right: 0px;
   opacity: 1;
+}
+
+.btnTop {
+  width: 40px;
+  height: 40px;
+  background: #4d0020;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+}
+.btnTop .iconTop {
+  font-size: 30px;
+  color: white;
+}
+.contSlader {
+  margin-top: 50px;
+  width: 100%;
+  background: limegreen;
+  position: relative;
+  overflow: hidden;
+}
+.contSlader .contSladerBase {
+  width: 300%;
+  height: 300px;
+  background: rebeccapurple;
+  display: flex;
+  flex-direction: row;
+}
+.contSlader .contSladerBase .contSlader_cuadroImg1 {
+  width: 100%;
+  height: 300px;
+  background-image: url(../source/vino1.jpg);
+  background-size: 100% 100%;
+}
+.contSlader .contSladerBase .contSlader_cuadroImg2 {
+  width: 100%;
+  height: 300px;
+  background-image: url(../source/vino2.jpg);
+  background-size: 100% 100%;
+}
+.contSlader .contSladerBase .contSlader_cuadroImg3 {
+  width: 100%;
+  height: 300px;
+  background-image: url(../source/vino3.jpg);
+  background-size: 100% 100%;
+}
+.contSlader .prew {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  font-size: 30px;
+  color: #e7e7e7;
+}
+.contSlader .next {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  font-size: 30px;
+  color: #e7e7e7;
 }
 
 /*# sourceMappingURL=main.css.map */
