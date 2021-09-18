@@ -180,20 +180,24 @@
     width: 40px;
     height: 40px;
     background: $colorVino;
+    border:1px solid $colorBlanco;
+    box-shadow: 0px 2px 2px white;
     border-radius: 5px;
     display: flex;
+    opacity: 0;
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 100px;
+    bottom: 50px;
     right: 20px;
+    transition: 0.5s all;
     .iconTop{
         font-size: 30px;
         color: white;
     }
-    .iconTopJS{
-        
-    }
+}
+.btnTopJS{
+    opacity: 1;
 }
 
 

@@ -12,7 +12,8 @@ html {
 
 .CONTAINER {
   width: 100%;
-  max-width: 1210px;
+  max-width: 1200px;
+  padding: 5px 0px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -95,7 +96,7 @@ html {
   cursor: pointer;
 }
 .containerHeader .containerHeaderTopC2 .nav .ul .li .link:hover {
-  color: #ad3e3e;
+  color: yellow;
 }
 
 @media only screen and (max-width: 720px) {
@@ -190,7 +191,7 @@ html {
 .contGeneralSection {
   width: 100%;
   padding: 20px 0px;
-  background: #55252b;
+  background: #812b34;
 }
 .contGeneralSection .titleM {
   padding-top: 60px;
@@ -221,7 +222,7 @@ html {
 }
 .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro {
   width: 100%;
-  background: rgba(77, 0, 32, 0.363);
+  background: rgba(27, 27, 27, 0.527);
   padding: 20px 0px;
   transition: 0.5s all;
   /*****TITULO*********************************************/
@@ -232,7 +233,7 @@ html {
 }
 .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .vinoTitle {
   font-size: 30px;
-  color: #e7e7e7;
+  color: white;
   text-align: center;
 }
 .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .contPrecio {
@@ -240,8 +241,8 @@ html {
   padding: 3px 0px;
   text-align: center;
   margin: auto;
-  font-size: 20px;
-  color: #e7e7e7;
+  font-size: 35px;
+  color: #d0da47;
 }
 .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .contDescription {
   width: 100%;
@@ -251,7 +252,7 @@ html {
 }
 .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .contDescription .contDescriptionTexto {
   text-align: center;
-  color: #e7e7e7;
+  color: white;
 }
 .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .selectores {
   opacity: 0;
@@ -310,8 +311,7 @@ html {
   opacity: 0;
   width: 120px;
   padding: 8px 10px;
-  background: transparent;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #1b1b1b;
   border-radius: 10px;
   color: #e7e7e7;
   margin-top: 10px;
@@ -342,14 +342,14 @@ html {
 }
 .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro:hover .contDescription .contDescriptionTexto {
   text-align: center;
-  color: #e7e7e7;
+  color: white;
 }
 .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro:hover .selectores {
   opacity: 1;
   margin-top: 10px;
   width: 150px;
   padding: 5px 0px;
-  background: rgba(77, 0, 32, 0.363);
+  background: #4d0020;
   border-radius: 10px;
   position: relative;
 }
@@ -501,7 +501,7 @@ html {
   }
   .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro {
     width: 100%;
-    background: rgba(77, 0, 32, 0.363);
+    background: rgba(0, 0, 0, 0.363);
     padding: 20px 0px;
     transition: 0s all;
     /*****TITULO*********************************************/
@@ -512,7 +512,7 @@ html {
   }
   .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .vinoTitle {
     font-size: 30px;
-    color: #e7e7e7;
+    color: white;
     text-align: center;
   }
   .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .contPrecio {
@@ -520,8 +520,8 @@ html {
     padding: 3px 0px;
     text-align: center;
     margin: auto;
-    font-size: 20px;
-    color: #e7e7e7;
+    font-size: 35px;
+    color: #f7f74d;
   }
   .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .contDescription {
     width: 250px;
@@ -789,7 +789,7 @@ html {
   }
   .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro {
     width: 100%;
-    background: rgba(77, 0, 32, 0.363);
+    background: rgba(0, 0, 0, 0.342);
     padding: 20px 0px;
     transition: 0s all;
     /*****TITULO*********************************************/
@@ -800,16 +800,16 @@ html {
   }
   .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .vinoTitle {
     font-size: 30px;
-    color: #e7e7e7;
+    color: white;
     text-align: center;
   }
   .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .contPrecio {
-    width: 120px;
+    width: 150px;
     padding: 3px 0px;
     text-align: center;
     margin: auto;
-    font-size: 20px;
-    color: #e7e7e7;
+    font-size: 35px;
+    color: #f7f72c;
   }
   .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro .contDescription {
     width: 250px;
@@ -1251,18 +1251,27 @@ html {
   width: 40px;
   height: 40px;
   background: #4d0020;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 2px 2px white;
   border-radius: 5px;
   display: flex;
+  opacity: 0;
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 100px;
+  bottom: 50px;
   right: 20px;
+  transition: 0.5s all;
 }
 .btnTop .iconTop {
   font-size: 30px;
   color: white;
 }
+
+.btnTopJS {
+  opacity: 1;
+}
+
 .contSlader {
   margin-top: 50px;
   width: 100%;
@@ -1272,39 +1281,38 @@ html {
 }
 .contSlader .contSladerBase {
   width: 300%;
-  height: 300px;
-  background: rebeccapurple;
+  height: 450px;
   display: flex;
   flex-direction: row;
 }
 .contSlader .contSladerBase .contSlader_cuadroImg1 {
   width: 100%;
-  height: 300px;
-  background-image: url(../source/vino1.jpg);
-  background-size: 100% 100%;
+  height: 450px;
+  background-image: url(../source/slader1.jpg);
+  background-size: cover;
 }
 .contSlader .contSladerBase .contSlader_cuadroImg2 {
   width: 100%;
-  height: 300px;
-  background-image: url(../source/vino2.jpg);
-  background-size: 100% 100%;
+  height: 450px;
+  background-image: url(../source/slader2.jpg);
+  background-size: cover;
 }
 .contSlader .contSladerBase .contSlader_cuadroImg3 {
   width: 100%;
-  height: 300px;
-  background-image: url(../source/vino3.jpg);
-  background-size: 100% 100%;
+  height: 450px;
+  background-image: url(../source/slader3.jpg);
+  background-size: cover;
 }
 .contSlader .prew {
   position: absolute;
-  top: 120px;
+  top: 200px;
   left: 20px;
   font-size: 30px;
   color: #e7e7e7;
 }
 .contSlader .next {
   position: absolute;
-  top: 120px;
+  top: 200px;
   right: 20px;
   font-size: 30px;
   color: #e7e7e7;

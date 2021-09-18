@@ -2,7 +2,7 @@
 .contGeneralSection{
     width: 100%;
     padding: 20px 0px;
-    background: rgb(85, 37, 43);
+    background: rgb(129, 43, 52);
     .titleM{
         //background: red;
         padding-top: 60px;
@@ -35,13 +35,13 @@
             position: relative;
             .containerSectionCuadro{
                 width: 100%;
-                background: $colorVinoTransparente;
+                background:$colorBlckTransparente;
                 padding: 20px 0px;
                 transition: 0.5s all;
                 /*****TITULO*********************************************/
                 .vinoTitle{
                     font-size: 30px;
-                    color: $colorBlanco;
+                    color: white;
                     text-align: center;
                     //background: chartreuse;
                 }
@@ -53,8 +53,8 @@
                    text-align: center;
                    //background: yellow;
                    margin: auto;
-                   font-size: 20px;
-                   color: $colorBlanco;
+                   font-size: 35px;
+                   color: rgb(208, 218, 71);
                 }
 
 
@@ -67,7 +67,7 @@
                     //background: yellowgreen;
                     .contDescriptionTexto{
                         text-align: center;
-                        color: $colorBlanco;
+                        color: rgb(255, 255, 255);
                     }
                 }
 
@@ -137,8 +137,8 @@
                     opacity: 0;
                     width: 120px;
                     padding: 8px 10px;
-                    background: transparent;
-                    border: 1px solid $colorBlanco;
+                    //background: red;
+                    border: 1px solid $colorBlck;
                     border-radius:10px;
                     color:$colorBlanco ;
                     margin-top:10px;
@@ -162,6 +162,7 @@
             /***ACCION HOVER*********************************************/
             .containerSectionCuadro:hover{
                 /******************/
+                //background: rgba(0, 0, 0, 0.685);
                 .contDescription{
                     width: 100%;
                     padding: 3px 0px;
@@ -169,7 +170,7 @@
                     //background: yellowgreen;
                     .contDescriptionTexto{
                         text-align: center;
-                        color: $colorBlanco;
+                        color: rgb(255, 255, 255);
                     }
                 }
 
@@ -179,7 +180,7 @@
                     margin-top: 10px;
                     width: 150px;
                     padding: 5px 0px;
-                    background: $colorVinoTransparente;
+                    background: $colorVino;
                     border-radius: 10px;
                     position: relative;
                     .title{
@@ -250,6 +251,12 @@
 
             }      
         }
+
+
+
+
+
+
 
         @media only screen and (max-width: 1024px) {
             .containerSectionCuadroBase{
@@ -356,13 +363,13 @@
                 overflow: hidden;
                 .containerSectionCuadro{
                     width: 100%;
-                    background: $colorVinoTransparente;
+                    background: rgba(0, 0, 0, 0.363);
                     padding: 20px 0px;
                     transition: 0s all;
                     /*****TITULO*********************************************/
                     .vinoTitle{
                         font-size: 30px;
-                        color: $colorBlanco;
+                        color: white;
                         text-align: center;
                         //background: chartreuse;
                     }
@@ -374,8 +381,8 @@
                        text-align: center;
                        //background: yellow;
                        margin: auto;
-                       font-size: 20px;
-                       color: $colorBlanco;
+                       font-size: 35px;
+                       color: rgb(247, 247, 77);
                     }
     
     
@@ -497,6 +504,7 @@
                
                 .containerSectionCuadro:hover{
                     /******************/
+                    //background: rgba(0, 0, 0, 0.685);
                     .contDescription{
                         width: 250px;
                         padding: 3px 0px;
@@ -687,26 +695,26 @@
                 overflow: hidden;
                 .containerSectionCuadro{
                     width: 100%;
-                    background: $colorVinoTransparente;
+                    background: rgba(0, 0, 0, 0.342);
                     padding: 20px 0px;
                     transition: 0s all;
                     /*****TITULO*********************************************/
                     .vinoTitle{
                         font-size: 30px;
-                        color: $colorBlanco;
+                        color: white;
                         text-align: center;
                         //background: chartreuse;
                     }
                     
                     /*****PRECIO**************************************/
                     .contPrecio{
-                       width: 120px;
+                       width: 150px;
                        padding: 3px 0px;
                        text-align: center;
                        //background: yellow;
                        margin: auto;
-                       font-size: 20px;
-                       color: $colorBlanco;
+                       font-size: 35px;
+                       color: rgb(247, 247, 44);
                     }
     
     
@@ -828,6 +836,7 @@
                
                 .containerSectionCuadro:hover{
                     /******************/
+                    //background: rgba(0, 0, 0, 0.685);
                     .contDescription{
                         width: 250px;
                         padding: 3px 0px;
