@@ -13,12 +13,11 @@ html {
 .CONTAINER {
   width: 100%;
   max-width: 1200px;
-  padding: 5px 0px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "HEADER         HEADER         HEADER" "SLADER         SLADER         SLADER" "SECTION        SECTION        SECTION" "FOOTER         FOOTER         FOOTER";
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "HEADER         HEADER         HEADER" "SLADER         SLADER         SLADER" "SECTION        SECTION        SECTION" "DESCRIPCION    DESCRIPCION    DESCRIPCION" "FOOTER         FOOTER         FOOTER";
 }
 .CONTAINER .HEADER {
   background: #012f41;
@@ -31,6 +30,10 @@ html {
 .CONTAINER .SECTION {
   background: #012f41;
   grid-area: SECTION;
+}
+.CONTAINER .DESCRIPCION {
+  background: #012f41;
+  grid-area: DESCRIPCION;
 }
 .CONTAINER .FOOTER {
   background: #012f41;
@@ -501,7 +504,7 @@ html {
   }
   .contGeneralSection .containerSection .containerSectionCuadroBase .containerSectionCuadro {
     width: 100%;
-    background: rgba(0, 0, 0, 0.363);
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px 0px;
     transition: 0s all;
     /*****TITULO*********************************************/
@@ -1316,6 +1319,76 @@ html {
   right: 20px;
   font-size: 30px;
   color: #e7e7e7;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  background: #57010183;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader .cargaText {
+  position: absolute;
+  top: 310px;
+  color: white;
+}
+
+.loaderJS {
+  animation: preloader 1s forwards;
+}
+
+@keyframes preloader {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.contDescripcion {
+  width: 100%;
+  padding: 60px 10px;
+  background: #4d0020;
+}
+.contDescripcion .titleM {
+  color: yellow;
+  margin-left: 30px;
+}
+.contDescripcion .contenido {
+  width: 100%;
+  padding: 5px 0px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contDescripcion .contenido .cont1 {
+  width: auto;
+  padding: 5px 0px;
+  text-align: justify;
+  color: yellow;
+}
+.contDescripcion .contenido .cont1 .hiper {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.contDescripcion .contenido .cont2 {
+  width: auto;
+  padding: 5px 0px;
+  text-align: justify;
+  color: yellow;
+}
+.contDescripcion .contenido .cont2 .hipe2 {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
