@@ -27,6 +27,12 @@ const img4 = document.querySelector("#img4");
 img4.classList.add("img4JS");
 const img5 = document.querySelector("#img5");
 img5.classList.add("img5JS");
+const img6 = document.querySelector("#img6");
+img6.classList.add("img6JS");
+const img7 = document.querySelector("#img7");
+img7.classList.add("img7JS");
+const img8 = document.querySelector("#img8");
+img8.classList.add("img8JS");
 /*
 
 const img4 = document.querySelector("#img4");
