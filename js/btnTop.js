@@ -1,6 +1,6 @@
 let btnTop = document.querySelector("#btnTop");
 
-window.addEventListener("scroll",() => {
+document.addEventListener("scroll",() => {
     let positiondelScroll = document.documentElement.scrollTop;  
     //console.log(positiondelScroll);
     let positiondelElemento = btnTop.offsetTop;   //position 334px

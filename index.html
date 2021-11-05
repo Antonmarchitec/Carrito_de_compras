@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hamburguers.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
         <!--POSITION ELEMENTS HEADER---------------------------------------->
         <!--POSITION ELEMENTS HEADER---------------------------------------->
         <div class="HEADER" >
-            <div class="containerHeader">
+            <div class="containerHeader" id="containerHeader">
                 <div class="containerLogo">
                     <!--<i class="iconLogo fas fa-air-freshener"></i>-->
                     <h2 class="iconLogo">Carrito<br>de compras</h2>
@@ -77,8 +78,25 @@
                     </p>
                     <a href="#"><button class="boton"> Contacto </button></a>
                 </div>
-                <div class="image">
 
+                <div class="contSladerBase">
+                    <div class="contSlader" id="contSlader">
+                        <div class="image_element">
+                          <img src="source/slader1.jpg" alt="UNIDADES" width="100%" height="100%">
+                        </div>
+                        <div class="image_element">
+                          <img src="source/botellas_vino.png" alt="UNIDADES" width="100%" height="100%">
+                        </div>
+                        <div class="image_element">
+                          <img src="source/botellas.png" alt="UNIDADES" width="100%" height="100%">
+                        </div>
+                    </div>
+                    <div class="btnLeft" id="btnLeft">
+                        <i class="iconCursores fas fa-arrow-alt-circle-left"></i>
+                    </div>
+                    <div class="btnRight" id="btnRight">
+                        <i class="iconCursores fas fa-arrow-alt-circle-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,16 +112,17 @@
         <!--POSITION ELEMENTS SECTION---------------------------------------->
         <!--POSITION ELEMENTS SECTION---------------------------------------->
         <div class="SECTION">
+
+            <!---CAMPO DE UNIDADES-->
             <div class="contGeneralSection">
 
                 <h1 class="titleM" id="UNIDAD">¡Unidades!</h1>
-
                 <div class="containerSection" id="containerSection1">
                     <!-----------CUADRO SELECTOR 1---------------->
-                    <div class="containerSectionCuadroBase" id="img1">
-                        <div class="containerSectionCuadro">
+                    <div class="containerSectionCuadroBase" id="imgUnidad1">
+                        <div class="containerSectionCuadro" >
                       
-                            <h2 class="vinoTitle">Vino Dulce</h2>
+                            <h2 class="vinoTitle">Vino <br>Dulce</h2>
                     
                             <div class="contPrecio">
                                 50 Bs
@@ -111,7 +130,7 @@
                             
                             <div class="contDescription" id="contDescription1">
                                 <p class="contDescriptionTexto">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellat?
                                 </p>
                             </div>
 
@@ -140,9 +159,9 @@
                     </div>
 
                     <!-----------CUADRO SELECTOR 2---------------->
-                    <div class="containerSectionCuadroBase" id="img2">
-                        <div class="containerSectionCuadro">
-                            <h2 class="vinoTitle">Vino Semidulce</h2>
+                    <div class="containerSectionCuadroBase" id="imgUnidad2">
+                        <div class="containerSectionCuadro" >
+                            <h2 class="vinoTitle">Vino <br>Semidulce</h2>
                             
                             <div class="contPrecio">
                                 100 Bs
@@ -150,7 +169,7 @@
                             
                             <div class="contDescription" id="contDescription2">
                                 <p class="contDescriptionTexto">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellat?
                                 </p>
                             </div>
             
@@ -179,9 +198,9 @@
 
 
                     <!-----------CUADRO SELECTOR 3---------------->
-                    <div class="containerSectionCuadroBase" id="img3">
-                        <div class="containerSectionCuadro">
-                            <h2 class="vinoTitle">Vino Blanco</h2>
+                    <div class="containerSectionCuadroBase" id="imgUnidad3">
+                        <div class="containerSectionCuadro" >
+                            <h2 class="vinoTitle">Vino <br>Blanco</h2>
                            
                             <div class="contPrecio">
                                 150 Bs
@@ -189,7 +208,7 @@
                             
                             <div class="contDescription" id="contDescription3">
                                 <p class="contDescriptionTexto">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellat?
                                 </p>
                             </div>
             
@@ -217,12 +236,11 @@
                   
                     </div>
 
-
                     <!-----------CUADRO SELECTOR 4---------------->
-                    <div class="containerSectionCuadroBase" id="img4">
-                        <div class="containerSectionCuadro">
+                    <div class="containerSectionCuadroBase" id="imgUnidad4">
+                        <div class="containerSectionCuadro" >
     
-                            <h2 class="vinoTitle">Vino Patero</h2>
+                            <h2 class="vinoTitle">Vino <br>Patero</h2>
                            
                             <div class="contPrecio">
                                 200 Bs
@@ -230,7 +248,7 @@
                             
                             <div class="contDescription" id="contDescription4">
                                 <p class="contDescriptionTexto">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellat?
                                 </p>
                             </div>
             
@@ -259,339 +277,341 @@
                     </div>
 
                 </div>
-
-
-                <div class="contGeneralSection" id="containerSection2">
-
-                    <h1 class="titleM" id="PAQUETE">¡Paquetes!</h1>
-    
-                    <div class="containerSection" id="containerSection2">
-                        <!-----------CUADRO SELECTOR 1---------------->
-                        <div class="containerSectionCuadroBase" id="img5">
-                            <div class="containerSectionCuadro">
-                          
-                                <h2 class="vinoTitle">Vino Dulce</h2>
-                        
-                                <div class="contPrecio">
-                                    50 Bs
-                                </div>
-                                
-                                <div class="contDescription">
-                                    <p class="contDescriptionTexto">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
-                                    </p>
-                                </div>
-    
-                                <div class="selectores" id="selectores5">
-                                    <h2 class="title">Cantidad</h2>
-                                    <div class="contCount">
-                                        <div class="anterior">
-                                            <i class="iconS fas fa-chevron-circle-left" id="anterior"></i>
-                                        </div>
-                                        <div class="date" id="dato">0</div>
-                                        <div class="siguiente">
-                                            <i class="iconS fas fa-chevron-circle-right" id="siguiente"></i>
-                                        </div>
+            </div>
             
-                                    </div>
-                                </div> 
-            
-                                <button class="btn_guardarVino" id="btn_guardarVino5"> Agregar al carrito </button>
-                             
-                            </div>
-    
-                            <div class="contFicha" id="contFicha5">
-                                <h2 class="textComprar">Comprar</h2>
-                            </div>
-                        </div>
-    
-                        <!-----------CUADRO SELECTOR 2---------------->
-                        <div class="containerSectionCuadroBase" id="img6">
-                            <div class="containerSectionCuadro">
-                                <h2 class="vinoTitle">Vino Semidulce</h2>
-                                
-                                <div class="contPrecio">
-                                    100 Bs
-                                </div>
-                                
-                                <div class="contDescription">
-                                    <p class="contDescriptionTexto">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
-                                    </p>
-                                </div>
-                
-                                <div class="selectores" id="selectores6">
-                                    <h2 class="title">Cantidad</h2>
-                                    <div class="contCount">
-                                        <div class="anterior">
-                                            <i class="iconS fas fa-chevron-circle-left" id="anterior2"></i>
-                                        </div>
-                                        <div class="date" id="dato2">0</div>
-                                        <div class="siguiente">
-                                            <i class="iconS fas fa-chevron-circle-right" id="siguiente2"></i>
-                                        </div>
-                
-                                    </div>
-                                </div>
-                
-                                <button class="btn_guardarVino" id="btnGuardarVinos6"> Agregar al carrito </button>
-                
-                            </div>
 
-                            <div class="contFicha" id="contFicha6">
-                                <h2 class="textComprar">Comprar</h2>
-                            </div>
-                        </div>
-    
-    
-                        <!-----------CUADRO SELECTOR 3---------------->
-                        <div class="containerSectionCuadroBase" id="img7">
-                            <div class="containerSectionCuadro">
-                                <h2 class="vinoTitle">Vino Blanco</h2>
-                               
-                                <div class="contPrecio">
-                                    150 Bs
-                                </div>
-                                
-                                <div class="contDescription">
-                                    <p class="contDescriptionTexto">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
-                                    </p>
-                                </div>
-                
-                                <div class="selectores" id="selectores7">
-                                    <h2 class="title">Cantidad</h2>
-                                    <div class="contCount">
-                                        <div class="anterior">
-                                            <i class="iconS fas fa-chevron-circle-left" id="anterior3"></i>
-                                        </div>
-                                        <div class="date" id="dato3">0</div>
-                                        <div class="siguiente">
-                                            <i class="iconS fas fa-chevron-circle-right" id="siguiente3"></i>
-                                        </div>
-                
-                                    </div>
-                                </div>  
-                                
-                                <button class="btn_guardarVino" id="btn_guardarVino7"> Agregar al carrito </button>
-                
-                            </div>
+            <!---CAMPO DE PAQUETES-->
+            <div class="contGeneralSection">
 
-                            <div class="contFicha" id="contFicha7">
-                                <h2 class="textComprar">Comprar</h2>
-                            </div>
-                        </div>
-    
-    
-                        <!-----------CUADRO SELECTOR 4---------------->
-                        <div class="containerSectionCuadroBase" id="img8">
-                            <div class="containerSectionCuadro">
-        
-                                <h2 class="vinoTitle">Vino Patero</h2>
-                               
-                                <div class="contPrecio">
-                                    200 Bs
-                                </div>
-                                
-                                <div class="contDescription">
-                                    <p class="contDescriptionTexto">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
-                                    </p>
-                                </div>
-                
-                                <div class="selectores" id="selectores8">
-                                    <h2 class="title">Cantidad</h2>
-                                    <div class="contCount">
-                                        <div class="anterior">
-                                            <i class="iconS fas fa-chevron-circle-left" id="anterior4"></i>
-                                        </div>
-                                        <div class="date" id="dato4">0</div>
-                                        <div class="siguiente">
-                                            <i class="iconS fas fa-chevron-circle-right" id="siguiente4"></i>
-                                        </div>
-                
-                                    </div>
-                                </div> 
-                                
-                                <button class="btn_guardarVino" id="btn_guardarVino8"> Agregar al carrito </button>
-                
+                <h1 class="titleM" id="PAQUETE">¡Paquetes!</h1>
+                <div class="containerSection" id="containerSection2">
+                    <!-----------CUADRO SELECTOR 5---------------->
+                    <div class="containerSectionCuadroBase" id="imgUnidad5">
+                        <div class="containerSectionCuadro">
+                      
+                            <h2 class="vinoTitle">Vino <br>Dulce</h2>
+                    
+                            <div class="contPrecio">
+                                50 Bs
                             </div>
                             
-                            <div class="contFicha" id="contFicha8">
-                                <h2 class="textComprar">Comprar</h2>
+                            <div class="contDescription">
+                                <p class="contDescriptionTexto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellat?
+                                </p>
                             </div>
+
+                            <div class="selectores" id="selectores5">
+                                <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterio5"></i>
+                                    </div>
+                                    <div class="date" id="dat5">0</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente5"></i>
+                                    </div>
+        
+                                </div>
+                            </div> 
+        
+                            <button class="btn_guardarVino" id="btn_guardarVino5"> Agregar al carrito </button>
+                         
                         </div>
-    
+
+                        <div class="contFicha" id="contFicha5">
+                            <h2 class="textComprar" id="textComprar">Comprar</h2>
+                        </div>
+
                     </div>
+
+                    <!-----------CUADRO SELECTOR 6---------------->
+                    <div class="containerSectionCuadroBase" id="imgUnidad6">
+                        <div class="containerSectionCuadro">
+                            <h2 class="vinoTitle">Vino <br>Semidulce</h2>
+                            
+                            <div class="contPrecio">
+                                100 Bs
+                            </div>
+                            
+                            <div class="contDescription">
+                                <p class="contDescriptionTexto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellat?
+                                </p>
+                            </div>
+            
+                            <div class="selectores" id="selectores6">
+                                <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterior6"></i>
+                                    </div>
+                                    <div class="date" id="dato6">0</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente6"></i>
+                                    </div>
+            
+                                </div>
+                            </div>
+            
+                            <button class="btn_guardarVino" id="btnGuardarVinos6"> Agregar al carrito </button>
+            
+                        </div>
+
+                        <div class="contFicha" id="contFicha6">
+                            <h2 class="textComprar">Comprar</h2>
+                        </div>
+                    </div>
+
+
+                    <!-----------CUADRO SELECTOR 7---------------->
+                    <div class="containerSectionCuadroBase" id="imgUnidad7">
+                        <div class="containerSectionCuadro">
+                            <h2 class="vinoTitle">Vino <br>Blanco</h2>
+                           
+                            <div class="contPrecio">
+                                150 Bs
+                            </div>
+                            
+                            <div class="contDescription">
+                                <p class="contDescriptionTexto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellat?
+                                </p>
+                            </div>
+            
+                            <div class="selectores" id="selectores7">
+                                <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterior7"></i>
+                                    </div>
+                                    <div class="date" id="dato7">0</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente7"></i>
+                                    </div>
+            
+                                </div>
+                            </div>  
+                            
+                            <button class="btn_guardarVino" id="btn_guardarVino7"> Agregar al carrito </button>
+            
+                        </div>
+
+                        <div class="contFicha" id="contFicha7">
+                            <h2 class="textComprar">Comprar</h2>
+                        </div>
+                  
+                    </div>
+
+
+                    <!-----------CUADRO SELECTOR 8---------------->
+                    <div class="containerSectionCuadroBase" id="imgUnidad8">
+                        <div class="containerSectionCuadro">
     
+                            <h2 class="vinoTitle">Vino <br>Patero</h2>
+                           
+                            <div class="contPrecio">
+                                200 Bs
+                            </div>
+                            
+                            <div class="contDescription">
+                                <p class="contDescriptionTexto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, repellat?
+                                </p>
+                            </div>
+            
+                            <div class="selectores" id="selectores8">
+                                <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterior8"></i>
+                                    </div>
+                                    <div class="date" id="dato8">0</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente8"></i>
+                                    </div>
+            
+                                </div>
+                            </div> 
+                            
+                            <button class="btn_guardarVino" id="btn_guardarVino8"> Agregar al carrito </button>
+            
+                        </div>
+
+                        <div class="contFicha" id="contFicha8">
+                            <h2 class="textComprar">Comprar</h2>
+                        </div>
+                   
+                    </div>
+
                 </div>
-    
-    
-                <div class="contGeneralSection" id="containerSection3">
-    
-                    <h1 class="titleM" id="GALONES">¡Galones!</h1>
-    
-                    <div class="containerSection" id="containerSection3">
-                        <!-----------CUADRO SELECTOR 1---------------->
-                        <div class="containerSectionCuadroBase" id="img9">
-                            <div class="containerSectionCuadro">
-                          
-                                <h2 class="vinoTitle">Vino Dulce</h2>
-                        
-                                <div class="contPrecio">
-                                    50 Bs
-                                </div>
-                                
-                                <div class="contDescription">
-                                    <p class="contDescriptionTexto">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
-                                    </p>
-                                </div>
-    
-                                <div class="selectores" id="selectores9">
-                                    <h2 class="title">Cantidad</h2>
-                                    <div class="contCount">
-                                        <div class="anterior">
-                                            <i class="iconS fas fa-chevron-circle-left" id="anterior"></i>
-                                        </div>
-                                        <div class="date" id="dato">0</div>
-                                        <div class="siguiente">
-                                            <i class="iconS fas fa-chevron-circle-right" id="siguiente"></i>
-                                        </div>
-            
-                                    </div>
-                                </div> 
-            
-                                <button class="btn_guardarVino" id="btn_guardarVino9"> Agregar al carrito </button>
-                             
-                            </div>
-    
-                            <div class="contFicha" id="contFicha9">
-                                <h2 class="textComprar">Comprar</h2>
-                            </div>
-                        </div>
-    
-                        <!-----------CUADRO SELECTOR 2---------------->
-                        <div class="containerSectionCuadroBase" id="img10">
-                            <div class="containerSectionCuadro">
-                                <h2 class="vinoTitle">Vino Semidulce</h2>
-                                
-                                <div class="contPrecio">
-                                    100 Bs
-                                </div>
-                                
-                                <div class="contDescription">
-                                    <p class="contDescriptionTexto">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
-                                    </p>
-                                </div>
-                
-                                <div class="selectores" id="selectores10">
-                                    <h2 class="title">Cantidad</h2>
-                                    <div class="contCount">
-                                        <div class="anterior">
-                                            <i class="iconS fas fa-chevron-circle-left" id="anterior2"></i>
-                                        </div>
-                                        <div class="date" id="dato2">0</div>
-                                        <div class="siguiente">
-                                            <i class="iconS fas fa-chevron-circle-right" id="siguiente2"></i>
-                                        </div>
-                
-                                    </div>
-                                </div>
-                
-                                <button class="btn_guardarVino" id="btn_guardarVino10"> Agregar al carrito </button>
-                
-                            </div>
-
-                            <div class="contFicha" id="contFicha10">
-                                <h2 class="textComprar">Comprar</h2>
-                            </div>
-                        </div>
-    
-    
-                        <!-----------CUADRO SELECTOR 3---------------->
-                        <div class="containerSectionCuadroBase" id="img11">
-                            <div class="containerSectionCuadro">
-                                <h2 class="vinoTitle">Vino Blanco</h2>
-                               
-                                <div class="contPrecio" >
-                                    150 Bs
-                                </div>
-                                
-                                <div class="contDescription">
-                                    <p class="contDescriptionTexto">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
-                                    </p>
-                                </div>
-                
-                                <div class="selectores" id="selectores11">
-                                    <h2 class="title">Cantidad</h2>
-                                    <div class="contCount">
-                                        <div class="anterior">
-                                            <i class="iconS fas fa-chevron-circle-left" id="anterior3"></i>
-                                        </div>
-                                        <div class="date" id="dato3">0</div>
-                                        <div class="siguiente">
-                                            <i class="iconS fas fa-chevron-circle-right" id="siguiente3"></i>
-                                        </div>
-                
-                                    </div>
-                                </div>  
-                                
-                                <button class="btn_guardarVino" id="btn_guardarVino11"> Agregar al carrito </button>
-                
-                            </div>
-
-                            <div class="contFicha" id="contFicha11">
-                                <h2 class="textComprar">Comprar</h2>
-                            </div>
-                        </div>
-    
-    
-                        <!-----------CUADRO SELECTOR 4---------------->
-                        <div class="containerSectionCuadroBase" id="img12">
-                            <div class="containerSectionCuadro">
+            </div>
         
-                                <h2 class="vinoTitle">Vino Patero</h2>
-                               
-                                <div class="contPrecio">
-                                    200 Bs
-                                </div>
-                                
-                                <div class="contDescription">
-                                    <p class="contDescriptionTexto">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quidem fugit tempora provident, consequuntur ea?
-                                    </p>
-                                </div>
-                
-                                <div class="selectores" id="selectores12">
-                                    <h2 class="title">Cantidad</h2>
-                                    <div class="contCount">
-                                        <div class="anterior">
-                                            <i class="iconS fas fa-chevron-circle-left" id="anterior4"></i>
-                                        </div>
-                                        <div class="date" id="dato4">0</div>
-                                        <div class="siguiente">
-                                            <i class="iconS fas fa-chevron-circle-right" id="siguiente4"></i>
-                                        </div>
-                
-                                    </div>
-                                </div> 
-                                
-                                <button class="btn_guardarVino" id="btn_guardarVino12"> Agregar al carrito </button>
-                
+
+            <!---CAMPO DE GALONES-->
+            <div class="contGeneralSection">
+                <h1 class="titleM" id="GALONES">¡Galones!</h1>
+                <div class="containerSection" id="containerSection3">
+                    <!-----------CUADRO SELECTOR 1---------------->
+                    <div class="containerSectionCuadroBase" id="imgUnidad9">
+                        <div class="containerSectionCuadro">
+                      
+                            <h2 class="vinoTitle">Vino <br>Dulce</h2>
+                    
+                            <div class="contPrecio">
+                                50 Bs
                             </div>
                             
-                            <div class="contFicha" id="contFicha12">
-                                <h2 class="textComprar">Comprar</h2>
+                            <div class="contDescription">
+                                <p class="contDescriptionTexto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aut.
+                                </p>
                             </div>
-                        </div>
-    
-                    </div>
-    
-                </div>     
 
+                            <div class="selectores" id="selectores9">
+                                <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterior9"></i>
+                                    </div>
+                                    <div class="date" id="dato9">0</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente9"></i>
+                                    </div>
+        
+                                </div>
+                            </div> 
+        
+                            <button class="btn_guardarVino" id="btn_guardarVino9"> Agregar al carrito </button>
+                         
+                        </div>
+
+                        <div class="contFicha" id="contFicha9">
+                            <h2 class="textComprar" id="textComprar">Comprar</h2>
+                        </div>
+
+                    </div>
+
+                    <!-----------CUADRO SELECTOR 2---------------->
+                    <div class="containerSectionCuadroBase" id="imgUnidad10">
+                        <div class="containerSectionCuadro">
+                            <h2 class="vinoTitle">Vino <br>Semidulce</h2>
+                            
+                            <div class="contPrecio">
+                                100 Bs
+                            </div>
+                            
+                            <div class="contDescription" >
+                                <p class="contDescriptionTexto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aut.
+                                </p>
+                            </div>
+            
+                            <div class="selectores" id="selectores10">
+                                <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterior10"></i>
+                                    </div>
+                                    <div class="date" id="dato10">0</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente10"></i>
+                                    </div>
+            
+                                </div>
+                            </div>
+            
+                            <button class="btn_guardarVino" id="btnGuardarVinos10"> Agregar al carrito </button>
+            
+                        </div>
+
+                        <div class="contFicha" id="contFicha10">
+                            <h2 class="textComprar">Comprar</h2>
+                        </div>
+                    </div>
+
+
+                    <!-----------CUADRO SELECTOR 3---------------->
+                    <div class="containerSectionCuadroBase" id="imgUnidad11">
+                        <div class="containerSectionCuadro">
+                            <h2 class="vinoTitle">Vino <br>Blanco</h2>
+                           
+                            <div class="contPrecio">
+                                150 Bs
+                            </div>
+                            
+                            <div class="contDescription">
+                                <p class="contDescriptionTexto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aut.
+                                </p>
+                            </div>
+            
+                            <div class="selectores" id="selectores11">
+                                <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterior11"></i>
+                                    </div>
+                                    <div class="date" id="dato11">0</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente11"></i>
+                                    </div>
+            
+                                </div>
+                            </div>  
+                            
+                            <button class="btn_guardarVino" id="btn_guardarVino11"> Agregar al carrito </button>
+            
+                        </div>
+
+                        <div class="contFicha" id="contFicha11">
+                            <h2 class="textComprar">Comprar</h2>
+                        </div>
+                  
+                    </div>
+
+
+                    <!-----------CUADRO SELECTOR 4---------------->
+                    <div class="containerSectionCuadroBase" id="imgUnidad12">
+                        <div class="containerSectionCuadro">
+    
+                            <h2 class="vinoTitle">Vino <br>Patero</h2>
+                           
+                            <div class="contPrecio">
+                                200 Bs
+                            </div>
+                            
+                            <div class="contDescription">
+                                <p class="contDescriptionTexto">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, aut.
+                                </p>
+                            </div>
+            
+                            <div class="selectores" id="selectores12">
+                                <h2 class="title">Cantidad</h2>
+                                <div class="contCount">
+                                    <div class="anterior">
+                                        <i class="iconS fas fa-chevron-circle-left" id="anterior12"></i>
+                                    </div>
+                                    <div class="date" id="dato12">0</div>
+                                    <div class="siguiente">
+                                        <i class="iconS fas fa-chevron-circle-right" id="siguiente12"></i>
+                                    </div>
+            
+                                </div>
+                            </div> 
+                            
+                            <button class="btn_guardarVino" id="btn_guardarVino12"> Agregar al carrito </button>
+            
+                        </div>
+
+                        <div class="contFicha" id="contFicha12">
+                            <h2 class="textComprar">Comprar</h2>
+                        </div>
+                   
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -681,81 +701,81 @@
         <!--POSITION ELEMENTS FIXED---------------------------------------->
         <div class="imgCarrito" id="imgCarrito">
             <i class="iconCarrito fas fa-cart-arrow-down">
-                <span class="text"> Ocultar !</span>
             </i>
         </div>
     
         <div class="contBasePedido" id="contBasePedido">  
             <div class="contenedorPedidos" id="contenedorPedidos">
                 <!--Nombres-->
-                <div class="contCampo1">
-                    <h3 class="title">Nombre</h3>
-                    <p class="text">Vino dulce</p>
-                    <p class="text">Vino Semidulce</p>
-                    <p class="text">Vino patero</p>
-                    <p class="text">Vino Blanco</p>
-                </div>
                 
-                <!--Cantidad-->
-                <div class="contCampo2">
-                    <h3 class="title">Cantidad</h3>
-                    <p class="number">2</p>
-                    <p class="number">3</p>
-                    <p class="number">4</p>
-                    <p class="number">5</p>
-                </div>
-                
-              
-
-
-                <!--Totales-->
-                <div class="contCampo5">
-                    <h3 class="title">Total</h3>
-                    <p class="number">100</p>
-                    <p class="number">200</p>
-                    <p class="number">300</p>
-                    <p class="number">400</p>
-                </div> 
-
-                <!--Btn-quitar-->
-                <div class="contBtnQuitar">
-                    <h3 class="title">Quitar</h3>
-                    <div class="btnQuitar">
-                        <a href=""><img src="source/iconoX.png" width="100%" height="100%"></a>  
-                    </div>
-                    <div class="btnQuitar">
-                        <a href=""><img src="source/iconoX.png" width="100%" height="100%"></a>  
-                    </div>
-                    <div class="btnQuitar">
-                        <a href=""><img src="source/iconoX.png" width="100%" height="100%"></a>  
-                    </div>
-                    <div class="btnQuitar">
-                        <a href=""><img src="source/iconoX.png" width="100%" height="100%"></a>  
-                    </div>  
-                </div>          
+                  <table class="tabla">
+                      <tr class="fila" >
+                        <td class="col_title" colspan="5">DETALLE DE COMPRA</td>
+                      </tr>
+                      <tr class="fila" >
+                        <td class="col_title">NOMBRE</td>
+                        <td class="col_title">CANTIDAD</td>
+                        <td class="col_title">TIPO</td>
+                        <td class="col_title">TOTAL</td>  
+                        <td class="col_title">QUITAR</td> 
+                        
+                      </tr>
+                      <tr class="fila">
+                        <td class="col_name">V. DULCE</td>
+                        <td class="col_cant">0</td>
+                        <td class="col_tipo">Unidad</td>
+                        <td class="col_total">0</td>
+                        <td class="col_icon">
+                            <a href="#">
+                                <img src="source/iconoX.png" alt="iconX" width="50%" height="50%" class="image">
+                            </a>                       
+                        </td>                    
+                      </tr>
+                      <tr class="fila">
+                        <td class="col_name">V. SEMIDULCE</td>
+                        <td class="col_cant">0</td>
+                        <td class="col_tipo">Unidad</td>
+                        <td class="col_total">0</td>
+                        <td class="col_icon">
+                            <a href="#">
+                                <img src="source/iconoX.png" alt="iconX" width="50%" height="50%" class="image">
+                            </a>                       
+                        </td>                      
+                      </tr>
+                      <tr class="fila">
+                        <td class="col_name">V. PATERO</td>
+                        <td class="col_cant">0</td>
+                        <td class="col_tipo">Unidad</td>
+                        <td class="col_total">0</td>
+                        <td class="col_icon">
+                            <a href="#">
+                                <img src="source/iconoX.png" alt="iconX" width="50%" height="50%" class="image">
+                            </a>                       
+                        </td>
+                      </tr>
+                      <tr class="fila">
+                        <td class="col_name">V. BLANCO</td>
+                        <td class="col_cant">0</td>
+                        <td class="col_tipo">Unidad</td>
+                        <td class="col_total">0</td>
+                        <td class="col_icon">
+                            <a href="#">
+                              <img src="source/iconoX.png" alt="iconX" width="50%" height="50%" class="image">
+                            </a>
+                        </td> 
+                        </tr>
+                      <tr class="fila" style="text-align: center;">
+                        <td class="col_name">TOTALES</td>
+                        <td class="col_cant">0</td>
+                        <td class="col_tipo"></td>
+                        <td class="col_total">0</td>
+                      </tr>
+                  </table>
+                  <div class="contBotones">
+                      <button class="boton">Enviar</button>
+                      <button class="boton">Cancelar</button>
+                  </div>
             </div>
-
-            <hr style="width: 90%;height:1px;background: aliceblue;margin: auto;opacity:.5;">
-
-            <div class="totales">
-                <div class="contNombre">
-                    <h3 class="NombreCantidad">TOTALES:</h3>
-                </div>
-                <div class="totalCantidad">
-                    500
-                </div>
-                <div class="totalTotales">
-                    2000
-                </div>
-            </div>
-            
-            
-            
-            <div class="contBotones">
-                <a href=""><button class="btns" id="btn"> Vaciar carrito</button></a>
-                <a href=""><button class="btns" id="btn"> Enviar </button></a>
-            </div>
-           
         </div>
         
         <a href="#container">
@@ -768,11 +788,14 @@
 
     <script src="js/selectores.js"></script>
     <script src="js/carrito.js"></script>
-    <script src="js/fichas.js"></script>
-    <script src="js/slader.js"></script>
+    <!-- <script src="js/fichas.js"></script>-->
     <script src="js/hamburguers.js"></script>
     <script src="js/btnResponsive.js"></script>
     <script src="js/btnTop.js"></script>
     <script src="js/preloader.js"></script>
+    <script src="js/image_fondo.js"></script>
+    <script src="js/galeria.js"></script>
+    <script src="js/header.js"></script>
+    
 </body>
 </html>

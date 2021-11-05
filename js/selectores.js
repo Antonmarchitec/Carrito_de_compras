@@ -1,3 +1,4 @@
+
 let anterior = document.querySelector("#anterior");
 let siguiente = document.querySelector("#siguiente");
 

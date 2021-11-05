@@ -14,6 +14,7 @@
     top: 0;
     left: 0;
     z-index: 20;
+    transition: 0.2s linear;
     .containerLogo{
         margin-left: 20px;
         width: auto;
@@ -71,14 +72,16 @@
     }
  
 }
-
+.containerHeader_JS{
+     opacity: 0.9;
+}
 
 
 @media only screen and (max-width: 720px) {
     .containerHeader{
         width: 100%;
         padding: 10px 0px;
-        background: $colorBlck;
+        //background: $colorBlck;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
