@@ -655,6 +655,10 @@ html {
   text-align: center;
   padding: 3px 0px;
 }
+.contBasePedido .contenedorPedidos .tabla .fila .image {
+  width: 30px;
+  height: 20px;
+}
 .contBasePedido .contenedorPedidos .contBotones {
   width: 100%;
   padding: 5px 0px;
